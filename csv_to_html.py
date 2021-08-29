@@ -1,8 +1,22 @@
 import csv
 
 FILE = "catalogo.csv"
+IMG = "SRC/"
 TITLE = "Catálogo Lentes de Contacto"
-START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head><body>'
+STYLE = '''
+			<style type="text/css">
+				.container{
+					display: flex;
+					flex: nowrap;
+					justify-content: center;
+					align-items: center;
+				}
+				h1{
+					text-align: center;
+				}
+			</style>
+		'''
+START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head>'+STYLE+'<body>'
 END = "</body></html>"
 
 def main():
@@ -20,8 +34,11 @@ def main():
 	for marca in marcas:
 		div = "<div>"
 		div += "<h1>"+marca+"</h1>"
+		
 		for lente in lentes:
 			if lente[1] == marca:
+				div += '<div class="container">'
+				div += '<img src='+IMG+lente[0]+' alt="imagen de producto" width="200" height="200">'
 				new_element = "<div>"
 				new_element += "<p>" + lente[2] + "</p>"
 				new_element += "<p>" + lente[3] + "</p>"
@@ -30,12 +47,16 @@ def main():
 				new_element += "</div>"
 
 				div += new_element
+				div += "</div>"
+		
 		div += "</div>"
 		html += div
 
 	html += END 
 
-	print(html)
+	f = open("index.html", 'w', encoding='utf-8')
+	f.write(html)
+	f.close()
 
 
 def getBrands(rows):
