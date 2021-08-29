@@ -2,7 +2,7 @@ import csv
 
 FILE = "catalogo.csv"
 TITLE = "Catálogo Lentes de Contacto"
-START = "<!DOCTYPE html><html><head><title>"+TITLE+"</title></head><body>"
+START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head><body>'
 END = "</body></html>"
 
 def main():
@@ -25,8 +25,8 @@ def main():
 				new_element = "<div>"
 				new_element += "<p>" + lente[2] + "</p>"
 				new_element += "<p>" + lente[3] + "</p>"
-				new_element += "<p>" + lente[4] + "</p>"
-				new_element += "<p>" + lente[5] + "</p>"
+				new_element += "<p>Contenido Hídrico: " + lente[4] + "</p>"
+				new_element += "<p>Permeabilidad: " + lente[5] + "</p>"
 				new_element += "</div>"
 
 				div += new_element
