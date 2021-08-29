@@ -1,5 +1,5 @@
 import csv
-
+#-------------------------------------------------
 FILE = "catalogo.csv"
 IMG = "SRC/"
 TITLE = "Catálogo Lentes de Contacto"
@@ -18,17 +18,23 @@ STYLE = '''
 		'''
 START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head>'+STYLE+'<body>'
 END = "</body></html>"
-
+#-------------------------------------------------
 def main():
-	
+	#De un archivo CSV crea una lista de listas por cada fila en el CSV
 	lentes = leeArchivo(FILE)
-	marcas = getBrands(lentes)
 
-	#print(lentes)
-	#print(marcas)
+	#Obtiene las N marcas (lentes[1]) que existan sin repetir
+	marcas = obtenerMarcas(lentes)[1:]
 
-	marcas = marcas[1:]
+	#Formatea las cadenas de texto en elementos HTML
+	html = crearHTML(lentes, marcas)
 
+	#Sobre escribe el catalogo con el nombre de index.html o lo crea si no existe
+	catalogo = open("index.html", 'w', encoding='utf-8')
+	catalogo.write(html)
+	catalogo.close()
+#-------------------------------------------------
+def crearHTML(lentes, marcas):
 	html = START + ""
 
 	for marca in marcas:
@@ -52,14 +58,9 @@ def main():
 		div += "</div>"
 		html += div
 
-	html += END 
+	return html + END
 
-	f = open("index.html", 'w', encoding='utf-8')
-	f.write(html)
-	f.close()
-
-
-def getBrands(rows):
+def obtenerMarcas(rows):
 	brands = []
 
 	for r in rows:
@@ -78,6 +79,6 @@ def leeArchivo(file):
 			rows.append(r)
 
 	return rows[:]
-
+#-------------------------------------------------
 if __name__ == "__main__":
 	main()
