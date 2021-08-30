@@ -7,7 +7,7 @@ STYLE = '''
 			<style type="text/css">
       			body{background-color: #D0E9EC;}
 
-      			h1{text-align: center;}
+      			h1,h2{text-align: center;}
 
       			p{color: #F3F3F3;}
       
@@ -21,10 +21,12 @@ STYLE = '''
          			height: 160px;
          			background-color: #00A5BE;
          			padding: 20px;
+         			border-radius: 0 10% 10% 0;
       			}
+      			img{border-radius: 10% 0 0 10%;}
    			</style>
 		'''
-START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head>'+STYLE+'<body>'
+START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head>'+STYLE+'<body><h1>Martínez Zárate Alexandra Marlene</h1>'
 END = "</body></html>"
 #-------------------------------------------------
 def main():
@@ -47,7 +49,7 @@ def crearHTML(lentes, marcas):
 
 	for marca in marcas:
 		div = "<div>"
-		div += "<h1>"+marca+"</h1>"
+		div += "<h2>"+marca+"</h2>"
 		
 		for lente in lentes:
 			if lente[1] == marca:
