@@ -54,9 +54,9 @@ def crearHTML(lentes, marcas):
 				div += '<img src='+IMG+lente[0]+' alt="imagen de producto" width="200" height="200">'
 				new_element = '<div class="info">'
 				new_element += "<p>" + lente[2] + "</p>"
-				new_element += "<p>" + lente[3] + "</p>"
-				new_element += "<p>Contenido Hídrico: " + lente[4] + "</p>"
-				new_element += "<p>Permeabilidad: " + lente[5] + "</p>"
+				new_element += "<p><strong>Material:</strong> " + lente[3] + "</p>"
+				new_element += "<p><strong>Contenido Hídrico:</strong> " + lente[4] + "</p>"
+				new_element += "<p><strong>Permeabilidad:</strong> " + lente[5] + "</p>"
 				new_element += "</div>"
 
 				div += new_element
