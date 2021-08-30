@@ -1,6 +1,6 @@
 import csv
 #-------------------------------------------------
-FILE = "catalogo.csv"
+FILE = "Catálogo-Lentes de contacto - Hoja 1.csv"
 IMG = "SRC/"
 TITLE = "Catálogo Lentes de Contacto"
 STYLE = '''
