@@ -24,6 +24,12 @@ STYLE = '''
          			border-radius: 0 10% 10% 0;
       			}
       			img{border-radius: 10% 0 0 10%;}
+      			.info2{
+      				height: 190px;
+         			background-color: #00A5BE;
+         			padding: 5px 20px 5px 20px;
+         			border-radius: 0 10% 10% 0;
+      			}
    			</style>
 		'''
 START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head>'+STYLE+'<body><h2>Martínez Zárate Alexandra Marlene</h2>'
@@ -55,8 +61,13 @@ def crearHTML(lentes, marcas):
 			if lente[1] == marca:
 				div += '<div class="container">'
 				div += '<img src='+IMG+lente[0]+' alt="imagen de producto" width="200" height="200">'
-				new_element = '<div class="info">'
+				if lente[6] != "":
+					new_element = '<div class="info2">'
+				else:
+					new_element = '<div class="info">'
 				new_element += "<p>" + lente[2] + "</p>"
+				if lente[6] != "":
+					new_element += "<p>" + lente[6] + "</p>"
 				new_element += "<p><strong>Material:</strong> " + lente[3] + "</p>"
 				new_element += "<p><strong>Contenido Hídrico:</strong> " + lente[4] + "</p>"
 				new_element += "<p><strong>Permeabilidad:</strong> " + lente[5] + "</p>"
