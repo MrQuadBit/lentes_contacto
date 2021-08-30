@@ -5,16 +5,23 @@ IMG = "SRC/"
 TITLE = "Catálogo Lentes de Contacto"
 STYLE = '''
 			<style type="text/css">
-				.container{
-					display: flex;
-					flex: nowrap;
-					justify-content: center;
-					align-items: center;
-				}
-				h1{
-					text-align: center;
-				}
-			</style>
+      			body{background-color: #D0E9EC;}
+
+      			h1{text-align: center;}
+
+      			p{color: #F3F3F3;}
+      
+      			.container{
+			    	display: flex;
+			    	flex: nowrap;
+			    	justify-content: center;
+			    	align-items: center;
+			    }
+      			.info{
+         			height: 200px;
+         			background-color: #00A5BE;
+      			}
+   			</style>
 		'''
 START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head>'+STYLE+'<body>'
 END = "</body></html>"
@@ -45,7 +52,7 @@ def crearHTML(lentes, marcas):
 			if lente[1] == marca:
 				div += '<div class="container">'
 				div += '<img src='+IMG+lente[0]+' alt="imagen de producto" width="200" height="200">'
-				new_element = "<div>"
+				new_element = '<div class="info">'
 				new_element += "<p>" + lente[2] + "</p>"
 				new_element += "<p>" + lente[3] + "</p>"
 				new_element += "<p>Contenido Hídrico: " + lente[4] + "</p>"
@@ -54,6 +61,7 @@ def crearHTML(lentes, marcas):
 
 				div += new_element
 				div += "</div>"
+				div += "<br>"
 		
 		div += "</div>"
 		html += div
