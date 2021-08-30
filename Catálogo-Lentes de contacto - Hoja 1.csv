@@ -4,8 +4,8 @@ ID,Marca,Nombre,Material,Contenido hídrico,Dk/T,Encabezado
 3.jpg,Jhonson & Jhonson,ACUVUE VITA,Senofilcon C,41%,147x10^-9,Lentes de contacto reutilizables
 4.jpg,Jhonson & Jhonson,ACUVUE OASYS CON HYDRACLEAR PLUS,Senofilcon A,38%,147x10^-9,
 5.jpg,Jhonson & Jhonson,ACUVUE OASYS for PRESBYOPIA,Senofilcon A,38%,147x10^-9,Lentes de contato multifocales
-6,Jhonson & Jhonson,1-DAY ACUVUE MOIST MULTIFOCAL,Etafilcon A,58%,25.5,
-7,Jhonson & Jhonson,1-DAY ACUVUE TruEye,Narafilcon A (hidrogel de silicona),46%,118x10^-9,Lentes de cotacto Desechables diarias
+6.jpg,Jhonson & Jhonson,1-DAY ACUVUE MOIST MULTIFOCAL,Etafilcon A,58%,25.5,
+7.jpg,Jhonson & Jhonson,1-DAY ACUVUE TruEye,Narafilcon A (hidrogel de silicona),46%,118x10^-9,Lentes de cotacto Desechables diarias
 8.jpg,Bausch & Lomb,PureVision 2 HD,Balafilcon A,36%,130,Lentes de contacto Terapeuticas
 9.jpg,Bausch & Lomb,SofLens Natural Colors,Polymacon,38.60%,16,Lentes de contacto Esteticas
 10.jpg,Bausch & Lomb,SofLens Daily Disposable,Hilafilcon B,59%,24,Lentes de contacto Desechables ocasionales
@@ -13,13 +13,13 @@ ID,Marca,Nombre,Material,Contenido hídrico,Dk/T,Encabezado
 12.jpg,Bausch & Lomb,ULTRA Multifocal for ASTIGMATISM,Samfilcon A,46%,104,
 13.jpg,Bausch & Lomb,Biotrue ONEday,Nesofilcon A,78%,42,
 14.jpg,Bausch & Lomb,Biotrue ONEday for Presbyopia,Nesofilcon A,78%,42,
-15.jpg,CooperVision,MyDay Toric,Stenfilcon A,54%,80,Lentes de contacto Desechables diarias
+15.png,CooperVision,MyDay Toric,Stenfilcon A,54%,80,Lentes de contacto Desechables diarias
 16.jpg,CooperVision,Proclear,Omafilcon B con PC,62%,42,Lentes de contacto de Tratamiento
 17.jpg,CooperVision,MiSight 1 day,Omafilcon A,60%,28,
 18.jpg,CooperVision,Biofinity multifocal,Comfilcon A,48%,142,Lente de contacto Tóricos
 19.jpg,CooperVision,My.Vision,Omafilcon A,60%,28,Lentes de contacto Pediatricos
 20.jpg,CooperVision,My.VisionTM Max +,Fanfilcon A,55%,110,Lentes de contacto Pediatricos
-21.jpg,CooperVision,Expressions colors,Metafilcon A,55%,21,Lentes de contacto Esteticas
+21.png,CooperVision,Expressions colors,Metafilcon A,55%,21,Lentes de contacto Esteticas
 22.jpg,Alcon,DAILIES TOTAL 1 Multifocal,Delefilcon A,33%,156,Lentes de contacto Tóricos
 23.jpg,Alcon,AIR OPTIX Plus HydraGlyde for Astigmatism,Lotrafilcon B,33%,110-108,
 24.jpg,Alcon,AIR OPTIX NIGHT & DAY AQUA,Lotrafilcon A,24%,175,
@@ -27,8 +27,8 @@ ID,Marca,Nombre,Material,Contenido hídrico,Dk/T,Encabezado
 26.jpg,Alcon,Air Optix Aqua,Lotrafilcon B,33%,138,
 27.png,Alcon,DAILIES COLORS,Nelfilcon A,69%,26,
 28.jpg,Alcon,DAILIES AquaComfort PLUS ,Nelfilcon A,69%,26,
-29.jpg,Menicon,Indivisual,Filcon V,74%,60,Lentes de contacto de Tratamiento
-30.jpg,Menicon,2week Menicon PremiO Toric,Asmofilcon A,40%,129x10^-9,
+29.jpeg,Menicon,Indivisual,Filcon V,74%,60,Lentes de contacto de Tratamiento
+30.jpeg,Menicon,2week Menicon PremiO Toric,Asmofilcon A,40%,129x10^-9,
 31.jpg,Menicon,Menicon Soft MA,Govafilcon A,37%,10x^10-11,
 32.jpg,Menicon,Menisoft,Mipafilcon A II 2,72%,34x10^-11,
 33.jpg,Menicon,Menicon EX,"Copolímero de fluorometacrilato, siloxanilmetacrilato y ácido metacrílico",0.50%,64x10^10-11,Lente de Contacto RGP
