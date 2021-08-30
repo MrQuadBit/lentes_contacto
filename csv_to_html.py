@@ -26,7 +26,7 @@ STYLE = '''
       			img{border-radius: 10% 0 0 10%;}
    			</style>
 		'''
-START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head>'+STYLE+'<body><h1>Martínez Zárate Alexandra Marlene</h1>'
+START = '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>'+TITLE+'</title></head>'+STYLE+'<body><h2>Martínez Zárate Alexandra Marlene</h2>'
 END = "</body></html>"
 #-------------------------------------------------
 def main():
@@ -49,7 +49,7 @@ def crearHTML(lentes, marcas):
 
 	for marca in marcas:
 		div = "<div>"
-		div += "<h2>"+marca+"</h2>"
+		div += "<h1>"+marca+"</h1>"
 		
 		for lente in lentes:
 			if lente[1] == marca:
