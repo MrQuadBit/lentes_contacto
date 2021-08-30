@@ -18,8 +18,9 @@ STYLE = '''
 			    	align-items: center;
 			    }
       			.info{
-         			height: 200px;
+         			height: 160px;
          			background-color: #00A5BE;
+         			padding: 20px;
       			}
    			</style>
 		'''
